@@ -4,14 +4,15 @@ using UnityEngine;
 
 public abstract class Entity : MonoBehaviour
 {
+    #region Head Comments
     //This is the parent class for all enemies and party members
     //It is mainly (and hopefully in the future, only) stats
     //So it has their 3 main stats, AP, and health
     //Their equipment is kept track in a separate object called Equipment
     //It's tied to it's prefab already set up, but for safety I'll have it check it has one just to be safe
+    #endregion
 
     //These are the three stats used by all entities
-    //More details in the stat class
     public Stat str;
     public Stat dex;
     public Stat wis;
@@ -39,7 +40,7 @@ public abstract class Entity : MonoBehaviour
     private void Start()
     {
 
-        Combat_DM.On_Turn_End += ShowStat;
+        //Combat_DM.On_Turn_End += ShowStat;
 
         //Since I can't (or can but it's a headache) instantiate the stats in the inspector I have you put in their values and then set them in here
         //Not a bad work around honestly
@@ -69,6 +70,8 @@ public abstract class Entity : MonoBehaviour
             wis = new Stat("wis");
         }
         str.SetTrueValue();
+        max_health = str.GetStat();
+        current_health = max_health;
         dex.SetTrueValue();
         wis.SetTrueValue();
         equipment.CalculateArmor();
@@ -80,6 +83,13 @@ public abstract class Entity : MonoBehaviour
     void ShowStat()
     {
         Debug.Log(str.GetStat());
+    }
+
+    public void Damage(int damage)
+    {
+        Debug.Log(name + " is dealt " + damage + " damage!");
+        current_health -= equipment.Damage(damage);
+        Debug.Log("Current health: " + current_health);
     }
 
 

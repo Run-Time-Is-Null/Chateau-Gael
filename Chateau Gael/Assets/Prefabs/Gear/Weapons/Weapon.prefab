@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c592ecd7f30bfe847bae8f6aa53aa61c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  price: 6
-  damage: 4
+  price: 0
+  damage: 0
   tag: 

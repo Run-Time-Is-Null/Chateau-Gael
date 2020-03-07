@@ -72,5 +72,15 @@ PrefabInstance:
       propertyPath: tag
       value: right
       objectReference: {fileID: 0}
+    - target: {fileID: 6868590669670364547, guid: fa195915de1479c469c9c558d7222d9e,
+        type: 3}
+      propertyPath: price
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868590669670364547, guid: fa195915de1479c469c9c558d7222d9e,
+        type: 3}
+      propertyPath: damage
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa195915de1479c469c9c558d7222d9e, type: 3}

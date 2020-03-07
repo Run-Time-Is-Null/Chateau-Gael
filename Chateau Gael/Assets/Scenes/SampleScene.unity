@@ -243,6 +243,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3220201744098749782, guid: 623041bc72847e94b8bd10d98b4e317b,
+        type: 3}
+      propertyPath: wpn1
+      value: 
+      objectReference: {fileID: 2694265304890418183, guid: a82b3cc0be191114b8c52414649c94de,
+        type: 3}
+    - target: {fileID: 3220201744098749782, guid: 623041bc72847e94b8bd10d98b4e317b,
+        type: 3}
+      propertyPath: legs
+      value: 
+      objectReference: {fileID: 6626863774843999873, guid: a6c35b399c91c83459b022a23dd0172d,
+        type: 3}
+    - target: {fileID: 3220201744098749782, guid: 623041bc72847e94b8bd10d98b4e317b,
+        type: 3}
+      propertyPath: hands
+      value: 
+      objectReference: {fileID: 3469683278888737502, guid: 9cd547ac74587ed499b0a5aeb5dbee18,
+        type: 3}
     - target: {fileID: 4414240656467154252, guid: 623041bc72847e94b8bd10d98b4e317b,
         type: 3}
       propertyPath: init_dex
@@ -359,6 +377,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 722263899218758583, guid: f1a1b0b353eedac479ff5dd2e10ed00f,
+        type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 5854687089112502399, guid: 8c67e10a2072a3241aa02030addd096b,
+        type: 3}
+    - target: {fileID: 722263899218758583, guid: f1a1b0b353eedac479ff5dd2e10ed00f,
+        type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 5663359503364137869, guid: d59e167a5dff506429580a94e084a2d3,
+        type: 3}
+    - target: {fileID: 722263899218758583, guid: f1a1b0b353eedac479ff5dd2e10ed00f,
+        type: 3}
+      propertyPath: wpn1
+      value: 
+      objectReference: {fileID: 2694265304890418183, guid: a82b3cc0be191114b8c52414649c94de,
+        type: 3}
     - target: {fileID: 3348211331938353173, guid: f1a1b0b353eedac479ff5dd2e10ed00f,
         type: 3}
       propertyPath: m_Name
@@ -545,6 +581,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1382940124592715115, guid: 8018bb0b0e59e964e988aac45e6a22ff,
         type: 3}
+    - target: {fileID: 2733312527146649454, guid: 07ee14143f5ae5d4aadc48d6336e8671,
+        type: 3}
+      propertyPath: legs
+      value: 
+      objectReference: {fileID: 8864743270260696779, guid: 7e49cc3b8399be743a5ce828834fd235,
+        type: 3}
+    - target: {fileID: 2733312527146649454, guid: 07ee14143f5ae5d4aadc48d6336e8671,
+        type: 3}
+      propertyPath: hands
+      value: 
+      objectReference: {fileID: 3265505317839820273, guid: 199d34b726d4226478ee13c19839be26,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07ee14143f5ae5d4aadc48d6336e8671, type: 3}
 --- !u!1001 &1446748376
@@ -638,6 +686,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2461713240894443774, guid: 898046204961663409846f6a16d99005,
+        type: 3}
+      propertyPath: wpn1
+      value: 
+      objectReference: {fileID: 2694265304890418183, guid: a82b3cc0be191114b8c52414649c94de,
+        type: 3}
+    - target: {fileID: 2461713240894443774, guid: 898046204961663409846f6a16d99005,
+        type: 3}
+      propertyPath: hands
+      value: 
+      objectReference: {fileID: 3469683278888737502, guid: 9cd547ac74587ed499b0a5aeb5dbee18,
+        type: 3}
+    - target: {fileID: 2461713240894443774, guid: 898046204961663409846f6a16d99005,
+        type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 836896907859578496, guid: 93467a513038f5c428ca58ee77d18c54,
+        type: 3}
     - target: {fileID: 2858584520412723955, guid: 898046204961663409846f6a16d99005,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -771,6 +837,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2334847809560350011, guid: 29d9714903487ba44a36e077476aef98,
+        type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 836896907859578496, guid: 93467a513038f5c428ca58ee77d18c54,
+        type: 3}
+    - target: {fileID: 2334847809560350011, guid: 29d9714903487ba44a36e077476aef98,
+        type: 3}
+      propertyPath: wpn1
+      value: 
+      objectReference: {fileID: 1382940124592715115, guid: 8018bb0b0e59e964e988aac45e6a22ff,
+        type: 3}
     - target: {fileID: 2730716197270284086, guid: 29d9714903487ba44a36e077476aef98,
         type: 3}
       propertyPath: m_LocalPosition.x

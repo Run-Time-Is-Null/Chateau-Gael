@@ -106,6 +106,32 @@ public class Equipment : MonoBehaviour
     {
         return max_m_armor;
     }
+    public int Damage(int damage)
+    {
+        if(current_p_armor >= 1)
+        {
+            if (damage <= current_p_armor)
+            {
+                current_p_armor -= damage;
+                Debug.Log("But their armor protected them completely!");
+                Debug.Log("Current armor: " + current_p_armor);
+                return 0;
+            }
+            else
+            {
+                damage -= current_p_armor;
+                current_p_armor = 0;
+                Debug.Log("Their armor mitigated the damage but now it's destroyed!");
+                Debug.Log("Current armor: " + current_p_armor);
+                return damage;
+            }
+        }
+        Debug.Log("And they have no more armor to protect against it!");
+        return damage;
+
+
+
+    }
 
 
 }

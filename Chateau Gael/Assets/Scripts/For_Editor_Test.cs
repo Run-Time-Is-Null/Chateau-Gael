@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DM : MonoBehaviour
+public class For_Editor_Test : MonoBehaviour
 {
 
-    public GameObject test;
+    public int[] int_array;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Instantiate(test, new Vector3(0, 0, 0), Quaternion.identity);
+        
     }
 
     // Update is called once per frame

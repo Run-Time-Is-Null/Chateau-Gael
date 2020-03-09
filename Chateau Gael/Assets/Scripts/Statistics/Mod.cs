@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Mod : MonoBehaviour
+[Serializable]
+public class Mod 
 {
     //Not too complex but this is the mod class
     //The main reason it exists is to just help with organization
@@ -12,17 +14,14 @@ public class Mod : MonoBehaviour
     //The two constructors are so it can only be given a float or integer
     //Just realized that the way I had it before meant you could pass a string or something else
 
-    [SerializeField] public dynamic mod;
+    public int mod;
+    public string stat;
     public int id;
 
-    Mod(int mod, int id)
+
+    public Mod(string stat, int mod)
     {
+        this.stat = stat;
         this.mod = mod;
-        this.id = id;
-    }
-    Mod(float mod, int id)
-    {
-        this.mod = mod;
-        this.id = id;
     }
 }

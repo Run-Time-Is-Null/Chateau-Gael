@@ -1,27 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Armor : MonoBehaviour 
 {
-    //make id and name readonly?
-    int ID;
+
+//make id and name readonly?
+    public int ID;
     public int price;
 
-    public string name;
-
     public string tag;
-
-    List<Resistence> resistences = new List<Resistence>();
-
-    public List<Mod> mods = new List<Mod>();
 
     public int p_armor;
     public int m_armor;
 
+    List<Resistence> resistences = new List<Resistence>();
+
+    [SerializeField] public List<Mod> mods;
+
     private void Start()
     {
         ID = ID_Manager.GiveSourceID();
+        foreach(Mod mod in mods)
+        {
+            Debug.Log(mod.mod);
+            Debug.Log(mod.stat);
+        }
     }
 
     /*Armor()
@@ -51,6 +56,8 @@ public class Armor : MonoBehaviour
     }
     public int GetPArmor()
     {
+        //mods[0].mod;
+        //mods[0].stat;
         return p_armor;
     }
     public int GetMArmor()

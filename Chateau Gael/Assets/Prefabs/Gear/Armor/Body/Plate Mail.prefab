@@ -69,6 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1677736287991558284, guid: 75fa111c5302d5b40bfc4a8912e2394c,
         type: 3}
+      propertyPath: mods.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677736287991558284, guid: 75fa111c5302d5b40bfc4a8912e2394c,
+        type: 3}
       propertyPath: init_price
       value: 10
       objectReference: {fileID: 0}

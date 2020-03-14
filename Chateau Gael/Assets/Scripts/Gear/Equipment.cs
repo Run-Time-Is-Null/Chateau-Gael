@@ -16,10 +16,12 @@ public class Equipment : MonoBehaviour
     public Weapon wpn2;
 
     //Armor
-    public Armor head;
+    /*public Armor head;
     public Armor body;
     public Armor legs;
-    public Armor hands;
+    public Armor hands;*/
+
+    public List<Armor> armors = new List<Armor>(4);
 
     //Max and current armor values
     public int max_p_armor;
@@ -30,22 +32,22 @@ public class Equipment : MonoBehaviour
     //Equips the armor based on it's tag
     //I will eventually figure out a tag system to use
     //It'll make organization of everything so much easier
-        //Like an enemy having a tag for what type it is, it's battle position. Weapons with like reach, or cleave. ect...
+    //Like an enemy having a tag for what type it is, it's battle position. Weapons with like reach, or cleave. ect...
     void EquipArmor(Armor armor)
     {
         switch (armor.tag)
         {
             case "head":
-                head = armor;
+                armors[0] = armor;
                 break;
             case "body":
-                body = armor;
+                armors[1] = armor;
                 break;
             case "legs":
-                legs = armor;
+                armors[2] = armor;
                 break;
             case "hands":
-                hands = armor;
+                armors[3] = armor;
                 break;
             default:
                 break;
@@ -72,26 +74,15 @@ public class Equipment : MonoBehaviour
         max_p_armor = 0;
         max_m_armor = 0;
 
-        if(head != null)
+        if(armors != null)
         {
-            max_p_armor += head.GetPArmor();
-            max_m_armor += head.GetMArmor();
+            foreach (Armor armor in armors)
+            {
+                max_p_armor += armor.p_armor;
+                max_m_armor += armor.m_armor;
+            }
         }
-        if(body != null)
-        {
-            max_p_armor += body.GetPArmor();
-            max_m_armor += body.GetMArmor();
-        }
-        if(legs != null)
-        {
-            max_p_armor += legs.GetPArmor();
-            max_m_armor += legs.GetMArmor();
-        }
-        if(hands != null)
-        {
-            max_p_armor += hands.GetPArmor();
-            max_m_armor += hands.GetMArmor();
-        }
+
 
         current_p_armor = max_p_armor;
         current_m_armor = max_m_armor;

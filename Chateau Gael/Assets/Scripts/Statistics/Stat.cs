@@ -16,7 +16,7 @@ public class Stat
 
     //Base and true value
     private int base_value;
-    int true_value;
+    public int true_value;
     //A list of all the modifiers - explained more in the mods class
     List<Mod> mods = new List<Mod>();
 
@@ -92,6 +92,7 @@ public class Stat
     //Sets the true value by using the modifiers
     public void SetTrueValue()
     {
+        SetMods();
         true_value = base_value;
         true_value += addition_mod;
         float temp_value = (float)true_value;

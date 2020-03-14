@@ -15,6 +15,7 @@ public class Editor_List
             EditorGUI.indentLevel += 1;
             if (list.isExpanded)
             {
+            EditorGUILayout.PropertyField(list.FindPropertyRelative("Array.size"));
                 for (int i = 0; i < list.arraySize; i++)
                 {
                 EditorGUILayout.PropertyField(list.GetArrayElementAtIndex(i));

@@ -65,7 +65,25 @@ PrefabInstance:
     - target: {fileID: 2626376243408968891, guid: 7a63a49c3fa82ec409487950e77080b8,
         type: 3}
       propertyPath: m_Name
-      value: Party Member
+      value: Medic
       objectReference: {fileID: 0}
+    - target: {fileID: 3741773009542192054, guid: 7a63a49c3fa82ec409487950e77080b8,
+        type: 3}
+      propertyPath: armors.Array.data[0]
+      value: 
+      objectReference: {fileID: 5854687089112502399, guid: 8c67e10a2072a3241aa02030addd096b,
+        type: 3}
+    - target: {fileID: 3741773009542192054, guid: 7a63a49c3fa82ec409487950e77080b8,
+        type: 3}
+      propertyPath: armors.Array.data[3]
+      value: 
+      objectReference: {fileID: 3265505317839820273, guid: 199d34b726d4226478ee13c19839be26,
+        type: 3}
+    - target: {fileID: 3741773009542192054, guid: 7a63a49c3fa82ec409487950e77080b8,
+        type: 3}
+      propertyPath: armors.Array.data[1]
+      value: 
+      objectReference: {fileID: 5663359503364137869, guid: d59e167a5dff506429580a94e084a2d3,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a63a49c3fa82ec409487950e77080b8, type: 3}

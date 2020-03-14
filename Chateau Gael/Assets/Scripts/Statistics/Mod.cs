@@ -14,8 +14,8 @@ public class Mod
     //The two constructors are so it can only be given a float or integer
     //Just realized that the way I had it before meant you could pass a string or something else
 
-    public int mod;
     public string stat;
+    public int mod;
     public int id;
 
 

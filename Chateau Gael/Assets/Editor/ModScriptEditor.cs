@@ -15,21 +15,7 @@ public class ModScriptEditor : Editor
         armor.tag = EditorGUILayout.TextField("Tag", armor.tag);
         armor.price = EditorGUILayout.IntField("Price", armor.price);
         armor.p_armor = EditorGUILayout.IntField("Physical Armor", armor.p_armor);
-        armor.m_armor = EditorGUILayout.IntField("Magical Armor", armor.m_armor);
-        EditorGUILayout.TextField("test", "man");
-
-        EditorGUILayout.BeginHorizontal();
-        string a = EditorGUILayout.TextField("Stat", "stat");
-        int b = EditorGUILayout.IntField("Mod", 0);
-        EditorGUILayout.EndHorizontal();
-
-        List<string> stats = new List<string>();
-        List<int> mods = new List<int>();
-
-        
-        
-
-        
+        armor.m_armor = EditorGUILayout.IntField("Magical Armor", armor.m_armor);  
 
         serializedObject.Update();
         Editor_List.Show(serializedObject.FindProperty("mods"));

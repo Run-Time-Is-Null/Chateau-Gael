@@ -22,11 +22,7 @@ public class Armor : MonoBehaviour
     private void Start()
     {
         ID = ID_Manager.GiveSourceID();
-        foreach(Mod mod in mods)
-        {
-            Debug.Log(mod.mod);
-            Debug.Log(mod.stat);
-        }
+        GiveIDs();
     }
 
     /*Armor()
@@ -67,6 +63,13 @@ public class Armor : MonoBehaviour
     public int GetID()
     {
         return ID;
+    }
+    public void GiveIDs()
+    {
+        foreach(Mod mod in mods)
+        {
+            mod.id = ID;
+        }
     }
 
 }

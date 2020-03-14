@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8525544762985985583
+--- !u!1 &3463378885908157305
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6705096661289477735}
-  - component: {fileID: 821090073}
+  - component: {fileID: 3463378885908157311}
+  - component: {fileID: 3463378885908157304}
   m_Layer: 0
-  m_Name: Equipment
+  m_Name: DM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6705096661289477735
+--- !u!4 &3463378885908157311
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8525544762985985583}
+  m_GameObject: {fileID: 3463378885908157305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,26 +31,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &821090073
+--- !u!114 &3463378885908157304
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8525544762985985583}
+  m_GameObject: {fileID: 3463378885908157305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 673ea2d90b0237e44bc0ecc690b4e393, type: 3}
+  m_Script: {fileID: 11500000, guid: 51df535c71da6c84480bcd6c37b386b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wpn1: {fileID: 0}
-  wpn2: {fileID: 0}
-  armors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  max_p_armor: 0
-  max_m_armor: 0
-  current_p_armor: 0
-  current_m_armor: 0
+  test: {fileID: 6361908537679119526, guid: 605abd65b64cf354084d445bd58b117f, type: 3}

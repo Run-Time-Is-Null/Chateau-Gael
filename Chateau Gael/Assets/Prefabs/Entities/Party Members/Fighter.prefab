@@ -112,6 +112,30 @@ PrefabInstance:
       propertyPath: AP
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3741773009542192054, guid: 7a63a49c3fa82ec409487950e77080b8,
+        type: 3}
+      propertyPath: armors.Array.data[1]
+      value: 
+      objectReference: {fileID: 8221432170427993692, guid: 5e61534a9097b2e479e3204abc0d40c4,
+        type: 3}
+    - target: {fileID: 3741773009542192054, guid: 7a63a49c3fa82ec409487950e77080b8,
+        type: 3}
+      propertyPath: armors.Array.data[2]
+      value: 
+      objectReference: {fileID: 6626863774843999873, guid: a6c35b399c91c83459b022a23dd0172d,
+        type: 3}
+    - target: {fileID: 3741773009542192054, guid: 7a63a49c3fa82ec409487950e77080b8,
+        type: 3}
+      propertyPath: armors.Array.data[0]
+      value: 
+      objectReference: {fileID: 836896907859578496, guid: 93467a513038f5c428ca58ee77d18c54,
+        type: 3}
+    - target: {fileID: 3741773009542192054, guid: 7a63a49c3fa82ec409487950e77080b8,
+        type: 3}
+      propertyPath: armors.Array.data[3]
+      value: 
+      objectReference: {fileID: 3469683278888737502, guid: 9cd547ac74587ed499b0a5aeb5dbee18,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 3838689188320534548, guid: 7a63a49c3fa82ec409487950e77080b8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7a63a49c3fa82ec409487950e77080b8, type: 3}

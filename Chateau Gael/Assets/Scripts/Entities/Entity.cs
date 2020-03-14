@@ -69,6 +69,7 @@ public abstract class Entity : MonoBehaviour
         {
             wis = new Stat("wis");
         }
+        SetMods();
         str.SetTrueValue();
         max_health = str.GetStat();
         current_health = max_health;
@@ -76,13 +77,10 @@ public abstract class Entity : MonoBehaviour
         wis.SetTrueValue();
         equipment.CalculateArmor();
 
+        Debug.Log(str.true_value);
+        Debug.Log(dex.true_value);
+        Debug.Log(wis.true_value);
 
-
-    }
-
-    void ShowStat()
-    {
-        Debug.Log(str.GetStat());
     }
 
     public void Damage(int damage)
@@ -90,6 +88,28 @@ public abstract class Entity : MonoBehaviour
         Debug.Log(name + " is dealt " + damage + " damage!");
         current_health -= equipment.Damage(damage);
         Debug.Log("Current health: " + current_health);
+    }
+
+    public void SetMods()
+    {
+        foreach(Armor armor in equipment.armors)
+        {
+            foreach(Mod mod in armor.mods)
+            {
+                switch (mod.stat)
+                {
+                    case "str":
+                        str.AddMod(mod);
+                        break;
+                    case "dex":
+                        dex.AddMod(mod);
+                        break;
+                    case "wis":
+                        wis.AddMod(mod);
+                        break;
+                }
+            }
+        }
     }
 
 

@@ -69,6 +69,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1677736287991558284, guid: 75fa111c5302d5b40bfc4a8912e2394c,
         type: 3}
+      propertyPath: mods.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677736287991558284, guid: 75fa111c5302d5b40bfc4a8912e2394c,
+        type: 3}
       propertyPath: tag
       value: hands
       objectReference: {fileID: 0}
@@ -86,6 +91,16 @@ PrefabInstance:
         type: 3}
       propertyPath: p_armor
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677736287991558284, guid: 75fa111c5302d5b40bfc4a8912e2394c,
+        type: 3}
+      propertyPath: mods.Array.data[0].stat
+      value: dex
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677736287991558284, guid: 75fa111c5302d5b40bfc4a8912e2394c,
+        type: 3}
+      propertyPath: mods.Array.data[0].mod
+      value: -3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75fa111c5302d5b40bfc4a8912e2394c, type: 3}
